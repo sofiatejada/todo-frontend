@@ -4,8 +4,9 @@ import { NavLink } from 'react-router-dom';
 export default class Header extends Component {
 
     logout = () => {
-        this.setState({ token: '' })
+        this.setState({ token: '', email: '', password: '' })
         localStorage.setItem('TOKEN', '')
+        window.location.href='/'
       }
 
     render() {
