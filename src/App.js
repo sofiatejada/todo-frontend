@@ -13,9 +13,9 @@ export default class App extends Component {
     token: localStorage.getItem('TOKEN')
   }
 
-  login = (userToken) => {
-    this.setState({ token: userToken })
-    localStorage.setItem('TOKEN', userToken)
+  login = (token) => {
+    this.setState({ token })
+    localStorage.setItem('TOKEN', token)
   }
 
   render() {
